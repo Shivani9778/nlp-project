@@ -56,18 +56,16 @@ Define a list of pairs where each pair consists of a regular expression pattern 
     # Add more patterns and responses
 ] ```
 
-### Chat Instance:
-
-Create an instance of Chat using the pairs and reflections.
+**###Chat Instance:**
 
  ```chatbot = Chat(pairs, reflections) ```
-## Start the Chat:
+**###Start the Chat:**
 
 Use the converse() method to start the chat with the user.
 
  ```print("Hi, I am your simple chatbot. Type 'quit' to exit.")
 chatbot.converse() ```
-### Usage
+**###Usage**
 
 Run the script and interact with the chatbot by typing messages.
 The chatbot responds based on the defined patterns.

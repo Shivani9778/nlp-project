@@ -1,13 +1,12 @@
 # Simple Chatbot using NLTK
 
-This is a basic chatbot built using Python and the Natural Language Toolkit (NLTK) library. The chatbot is capable of responding to simple user inputs based on predefined patterns.
+This is a basic chatbot built using Python and the Natural Language Toolkit (NLTK) library. The chatbot is designed to respond to user inputs based on predefined patterns using regular expressions.
 
 ## Features
 
-- Responds to basic greetings, introductions, and questions about AI.
-- Simple pattern matching using regular expressions.
-- Predefined responses based on user input.
-- Designed to showcase a basic implementation of chatbot logic with NLTK.
+- Responds to basic greetings, introductions, and simple questions.
+- Uses pattern matching with regular expressions to generate responses.
+- Can be extended with more patterns and responses to enhance interactivity.
 
 ## Requirements
 
@@ -37,13 +36,13 @@ This is a basic chatbot built using Python and the Natural Language Toolkit (NLT
 
 ## How it Works
 
-The chatbot uses the NLTK library's `Chat` class, which uses pattern matching with predefined patterns and corresponding responses. It uses regular expressions to match user input with patterns and responds accordingly.
+### Define Patterns and Responses
 
-### Code Explanation
+Define a list of `pairs` where each pair consists of a regular expression pattern and a list of possible responses.
 
-- **Import Libraries**: 
+```python
+pairs = [
+    [r"hi|hello|hey", ["Hello!", "Hi there!", "Hey! How can I help you?"]],
+    # Add more patterns and responses
+]
 
-  ```python
-  import nltk
-  from nltk.chat.util import Chat, reflection
-   ```

@@ -47,26 +47,3 @@ The chatbot uses the NLTK library's `Chat` class, which uses pattern matching wi
   import nltk
   from nltk.chat.util import Chat, reflection
    ```
-### Define Patterns and Responses:
-Define a list of pairs where each pair consists of a regular expression pattern and a list of possible responses.
-
-
- ```pairs = [
-    [r"hi|hello|hey", ["Hello!", "Hi there!", "Hey! How can I help you?"]],
-    # Add more patterns and responses
-] ```
-
-**###Chat Instance:**
-
- ```chatbot = Chat(pairs, reflections) ```
-**###Start the Chat:**
-
-Use the converse() method to start the chat with the user.
-
- ```print("Hi, I am your simple chatbot. Type 'quit' to exit.")
-chatbot.converse() ```
-**###Usage**
-
-Run the script and interact with the chatbot by typing messages.
-The chatbot responds based on the defined patterns.
-Type quit to exit the conversation.
